@@ -1,0 +1,294 @@
+{
+  "results": {
+    "tool": {
+      "name": "jest"
+    },
+    "summary": {
+      "tests": 25,
+      "passed": 25,
+      "failed": 0,
+      "pending": 0,
+      "skipped": 0,
+      "other": 0,
+      "start": 1777366951679,
+      "stop": 1777366953794
+    },
+    "tests": [
+      {
+        "name": "[0] sağlık",
+        "duration": 70,
+        "status": "passed",
+        "rawStatus": "passed",
+        "type": "unit",
+        "filePath": "C:\\Users\\ebrus\\OneDrive\\Desktop\\My Repos\\fsweb-s13g3-node-api-project-3\\codegrade_mvp.test.js",
+        "retries": 0,
+        "flaky": false,
+        "suite": "C:\\Users\\ebrus\\OneDrive\\Desktop\\My Repos\\fsweb-s13g3-node-api-project-3\\codegrade_mvp.test.js"
+      },
+      {
+        "name": "server.js [GET] /api/users [1] doğru kullanıcı sayısı",
+        "duration": 45,
+        "status": "passed",
+        "rawStatus": "passed",
+        "type": "unit",
+        "filePath": "C:\\Users\\ebrus\\OneDrive\\Desktop\\My Repos\\fsweb-s13g3-node-api-project-3\\codegrade_mvp.test.js",
+        "retries": 0,
+        "flaky": false,
+        "suite": "C:\\Users\\ebrus\\OneDrive\\Desktop\\My Repos\\fsweb-s13g3-node-api-project-3\\codegrade_mvp.test.js > server.js > [GET] /api/users"
+      },
+      {
+        "name": "server.js [GET] /api/users [2] tüm kullanıcıları alıyor",
+        "duration": 30,
+        "status": "passed",
+        "rawStatus": "passed",
+        "type": "unit",
+        "filePath": "C:\\Users\\ebrus\\OneDrive\\Desktop\\My Repos\\fsweb-s13g3-node-api-project-3\\codegrade_mvp.test.js",
+        "retries": 0,
+        "flaky": false,
+        "suite": "C:\\Users\\ebrus\\OneDrive\\Desktop\\My Repos\\fsweb-s13g3-node-api-project-3\\codegrade_mvp.test.js > server.js > [GET] /api/users"
+      },
+      {
+        "name": "server.js [GET] /api/users/:id [3] kullanıcıyı alıyor",
+        "duration": 34,
+        "status": "passed",
+        "rawStatus": "passed",
+        "type": "unit",
+        "filePath": "C:\\Users\\ebrus\\OneDrive\\Desktop\\My Repos\\fsweb-s13g3-node-api-project-3\\codegrade_mvp.test.js",
+        "retries": 0,
+        "flaky": false,
+        "suite": "C:\\Users\\ebrus\\OneDrive\\Desktop\\My Repos\\fsweb-s13g3-node-api-project-3\\codegrade_mvp.test.js > server.js > [GET] /api/users/:id"
+      },
+      {
+        "name": "server.js [GET] /api/users/:id [4] id yoksa 404 döndürüyor",
+        "duration": 27,
+        "status": "passed",
+        "rawStatus": "passed",
+        "type": "unit",
+        "filePath": "C:\\Users\\ebrus\\OneDrive\\Desktop\\My Repos\\fsweb-s13g3-node-api-project-3\\codegrade_mvp.test.js",
+        "retries": 0,
+        "flaky": false,
+        "suite": "C:\\Users\\ebrus\\OneDrive\\Desktop\\My Repos\\fsweb-s13g3-node-api-project-3\\codegrade_mvp.test.js > server.js > [GET] /api/users/:id"
+      },
+      {
+        "name": "server.js [GET] /api/users/:id [5] id yoksa doğru hata mesajı",
+        "duration": 30,
+        "status": "passed",
+        "rawStatus": "passed",
+        "type": "unit",
+        "filePath": "C:\\Users\\ebrus\\OneDrive\\Desktop\\My Repos\\fsweb-s13g3-node-api-project-3\\codegrade_mvp.test.js",
+        "retries": 0,
+        "flaky": false,
+        "suite": "C:\\Users\\ebrus\\OneDrive\\Desktop\\My Repos\\fsweb-s13g3-node-api-project-3\\codegrade_mvp.test.js > server.js > [GET] /api/users/:id"
+      },
+      {
+        "name": "server.js [POST] /api/users [6] veritabanında kullanıcı oluşturuyor",
+        "duration": 55,
+        "status": "passed",
+        "rawStatus": "passed",
+        "type": "unit",
+        "filePath": "C:\\Users\\ebrus\\OneDrive\\Desktop\\My Repos\\fsweb-s13g3-node-api-project-3\\codegrade_mvp.test.js",
+        "retries": 0,
+        "flaky": false,
+        "suite": "C:\\Users\\ebrus\\OneDrive\\Desktop\\My Repos\\fsweb-s13g3-node-api-project-3\\codegrade_mvp.test.js > server.js > [POST] /api/users"
+      },
+      {
+        "name": "server.js [POST] /api/users [7] yeni oluşturulan kullanıcıyı döndürüyor",
+        "duration": 45,
+        "status": "passed",
+        "rawStatus": "passed",
+        "type": "unit",
+        "filePath": "C:\\Users\\ebrus\\OneDrive\\Desktop\\My Repos\\fsweb-s13g3-node-api-project-3\\codegrade_mvp.test.js",
+        "retries": 0,
+        "flaky": false,
+        "suite": "C:\\Users\\ebrus\\OneDrive\\Desktop\\My Repos\\fsweb-s13g3-node-api-project-3\\codegrade_mvp.test.js > server.js > [POST] /api/users"
+      },
+      {
+        "name": "server.js [POST] /api/users [8] name yoksa 400 yanıtlıyor",
+        "duration": 27,
+        "status": "passed",
+        "rawStatus": "passed",
+        "type": "unit",
+        "filePath": "C:\\Users\\ebrus\\OneDrive\\Desktop\\My Repos\\fsweb-s13g3-node-api-project-3\\codegrade_mvp.test.js",
+        "retries": 0,
+        "flaky": false,
+        "suite": "C:\\Users\\ebrus\\OneDrive\\Desktop\\My Repos\\fsweb-s13g3-node-api-project-3\\codegrade_mvp.test.js > server.js > [POST] /api/users"
+      },
+      {
+        "name": "server.js [POST] /api/users [9] name yoksa doğru doğrulama mesajı",
+        "duration": 28,
+        "status": "passed",
+        "rawStatus": "passed",
+        "type": "unit",
+        "filePath": "C:\\Users\\ebrus\\OneDrive\\Desktop\\My Repos\\fsweb-s13g3-node-api-project-3\\codegrade_mvp.test.js",
+        "retries": 0,
+        "flaky": false,
+        "suite": "C:\\Users\\ebrus\\OneDrive\\Desktop\\My Repos\\fsweb-s13g3-node-api-project-3\\codegrade_mvp.test.js > server.js > [POST] /api/users"
+      },
+      {
+        "name": "server.js [PUT] /api/users/:id [10] veritabanını güncelliyor",
+        "duration": 34,
+        "status": "passed",
+        "rawStatus": "passed",
+        "type": "unit",
+        "filePath": "C:\\Users\\ebrus\\OneDrive\\Desktop\\My Repos\\fsweb-s13g3-node-api-project-3\\codegrade_mvp.test.js",
+        "retries": 0,
+        "flaky": false,
+        "suite": "C:\\Users\\ebrus\\OneDrive\\Desktop\\My Repos\\fsweb-s13g3-node-api-project-3\\codegrade_mvp.test.js > server.js > [PUT] /api/users/:id"
+      },
+      {
+        "name": "server.js [PUT] /api/users/:id [11] yeni kullanıcıyı yanıtlıyor",
+        "duration": 31,
+        "status": "passed",
+        "rawStatus": "passed",
+        "type": "unit",
+        "filePath": "C:\\Users\\ebrus\\OneDrive\\Desktop\\My Repos\\fsweb-s13g3-node-api-project-3\\codegrade_mvp.test.js",
+        "retries": 0,
+        "flaky": false,
+        "suite": "C:\\Users\\ebrus\\OneDrive\\Desktop\\My Repos\\fsweb-s13g3-node-api-project-3\\codegrade_mvp.test.js > server.js > [PUT] /api/users/:id"
+      },
+      {
+        "name": "server.js [PUT] /api/users/:id [12] id yoksa 404 yanıtlıyor",
+        "duration": 27,
+        "status": "passed",
+        "rawStatus": "passed",
+        "type": "unit",
+        "filePath": "C:\\Users\\ebrus\\OneDrive\\Desktop\\My Repos\\fsweb-s13g3-node-api-project-3\\codegrade_mvp.test.js",
+        "retries": 0,
+        "flaky": false,
+        "suite": "C:\\Users\\ebrus\\OneDrive\\Desktop\\My Repos\\fsweb-s13g3-node-api-project-3\\codegrade_mvp.test.js > server.js > [PUT] /api/users/:id"
+      },
+      {
+        "name": "server.js [PUT] /api/users/:id [13] name eksikse 400 yanıtlıyor",
+        "duration": 29,
+        "status": "passed",
+        "rawStatus": "passed",
+        "type": "unit",
+        "filePath": "C:\\Users\\ebrus\\OneDrive\\Desktop\\My Repos\\fsweb-s13g3-node-api-project-3\\codegrade_mvp.test.js",
+        "retries": 0,
+        "flaky": false,
+        "suite": "C:\\Users\\ebrus\\OneDrive\\Desktop\\My Repos\\fsweb-s13g3-node-api-project-3\\codegrade_mvp.test.js > server.js > [PUT] /api/users/:id"
+      },
+      {
+        "name": "server.js [PUT] /api/users/:id [14] name yoksa doğru mesaj",
+        "duration": 29,
+        "status": "passed",
+        "rawStatus": "passed",
+        "type": "unit",
+        "filePath": "C:\\Users\\ebrus\\OneDrive\\Desktop\\My Repos\\fsweb-s13g3-node-api-project-3\\codegrade_mvp.test.js",
+        "retries": 0,
+        "flaky": false,
+        "suite": "C:\\Users\\ebrus\\OneDrive\\Desktop\\My Repos\\fsweb-s13g3-node-api-project-3\\codegrade_mvp.test.js > server.js > [PUT] /api/users/:id"
+      },
+      {
+        "name": "server.js [DELETE] /api/users/:id [15] kullanıcıyı veritabanından siliyor",
+        "duration": 44,
+        "status": "passed",
+        "rawStatus": "passed",
+        "type": "unit",
+        "filePath": "C:\\Users\\ebrus\\OneDrive\\Desktop\\My Repos\\fsweb-s13g3-node-api-project-3\\codegrade_mvp.test.js",
+        "retries": 0,
+        "flaky": false,
+        "suite": "C:\\Users\\ebrus\\OneDrive\\Desktop\\My Repos\\fsweb-s13g3-node-api-project-3\\codegrade_mvp.test.js > server.js > [DELETE] /api/users/:id"
+      },
+      {
+        "name": "server.js [DELETE] /api/users/:id [16] yeni silinen üyeyi dönderiyor",
+        "duration": 37,
+        "status": "passed",
+        "rawStatus": "passed",
+        "type": "unit",
+        "filePath": "C:\\Users\\ebrus\\OneDrive\\Desktop\\My Repos\\fsweb-s13g3-node-api-project-3\\codegrade_mvp.test.js",
+        "retries": 0,
+        "flaky": false,
+        "suite": "C:\\Users\\ebrus\\OneDrive\\Desktop\\My Repos\\fsweb-s13g3-node-api-project-3\\codegrade_mvp.test.js > server.js > [DELETE] /api/users/:id"
+      },
+      {
+        "name": "server.js [DELETE] /api/users/:id [17] user id yoksa 404 yanıtlıyor",
+        "duration": 32,
+        "status": "passed",
+        "rawStatus": "passed",
+        "type": "unit",
+        "filePath": "C:\\Users\\ebrus\\OneDrive\\Desktop\\My Repos\\fsweb-s13g3-node-api-project-3\\codegrade_mvp.test.js",
+        "retries": 0,
+        "flaky": false,
+        "suite": "C:\\Users\\ebrus\\OneDrive\\Desktop\\My Repos\\fsweb-s13g3-node-api-project-3\\codegrade_mvp.test.js > server.js > [DELETE] /api/users/:id"
+      },
+      {
+        "name": "server.js [GET] /api/users/:id/posts [18] user post sayısı doğru",
+        "duration": 30,
+        "status": "passed",
+        "rawStatus": "passed",
+        "type": "unit",
+        "filePath": "C:\\Users\\ebrus\\OneDrive\\Desktop\\My Repos\\fsweb-s13g3-node-api-project-3\\codegrade_mvp.test.js",
+        "retries": 0,
+        "flaky": false,
+        "suite": "C:\\Users\\ebrus\\OneDrive\\Desktop\\My Repos\\fsweb-s13g3-node-api-project-3\\codegrade_mvp.test.js > server.js > [GET] /api/users/:id/posts"
+      },
+      {
+        "name": "server.js [GET] /api/users/:id/posts [19] user id yoksa 404 yanıtlıyor",
+        "duration": 28,
+        "status": "passed",
+        "rawStatus": "passed",
+        "type": "unit",
+        "filePath": "C:\\Users\\ebrus\\OneDrive\\Desktop\\My Repos\\fsweb-s13g3-node-api-project-3\\codegrade_mvp.test.js",
+        "retries": 0,
+        "flaky": false,
+        "suite": "C:\\Users\\ebrus\\OneDrive\\Desktop\\My Repos\\fsweb-s13g3-node-api-project-3\\codegrade_mvp.test.js > server.js > [GET] /api/users/:id/posts"
+      },
+      {
+        "name": "server.js [POST] /api/users/:id/posts [20] veritabanında yeni kullanıcı oluşturuyor",
+        "duration": 46,
+        "status": "passed",
+        "rawStatus": "passed",
+        "type": "unit",
+        "filePath": "C:\\Users\\ebrus\\OneDrive\\Desktop\\My Repos\\fsweb-s13g3-node-api-project-3\\codegrade_mvp.test.js",
+        "retries": 0,
+        "flaky": false,
+        "suite": "C:\\Users\\ebrus\\OneDrive\\Desktop\\My Repos\\fsweb-s13g3-node-api-project-3\\codegrade_mvp.test.js > server.js > [POST] /api/users/:id/posts"
+      },
+      {
+        "name": "server.js [POST] /api/users/:id/posts [21] yeni oluşturulan üyeyi dönderiyor",
+        "duration": 38,
+        "status": "passed",
+        "rawStatus": "passed",
+        "type": "unit",
+        "filePath": "C:\\Users\\ebrus\\OneDrive\\Desktop\\My Repos\\fsweb-s13g3-node-api-project-3\\codegrade_mvp.test.js",
+        "retries": 0,
+        "flaky": false,
+        "suite": "C:\\Users\\ebrus\\OneDrive\\Desktop\\My Repos\\fsweb-s13g3-node-api-project-3\\codegrade_mvp.test.js > server.js > [POST] /api/users/:id/posts"
+      },
+      {
+        "name": "server.js [POST] /api/users/:id/posts [22] user id yoksa 404 yanıtlıyor",
+        "duration": 29,
+        "status": "passed",
+        "rawStatus": "passed",
+        "type": "unit",
+        "filePath": "C:\\Users\\ebrus\\OneDrive\\Desktop\\My Repos\\fsweb-s13g3-node-api-project-3\\codegrade_mvp.test.js",
+        "retries": 0,
+        "flaky": false,
+        "suite": "C:\\Users\\ebrus\\OneDrive\\Desktop\\My Repos\\fsweb-s13g3-node-api-project-3\\codegrade_mvp.test.js > server.js > [POST] /api/users/:id/posts"
+      },
+      {
+        "name": "server.js [POST] /api/users/:id/posts [23] text yoksa 400 yanıtlıyor",
+        "duration": 32,
+        "status": "passed",
+        "rawStatus": "passed",
+        "type": "unit",
+        "filePath": "C:\\Users\\ebrus\\OneDrive\\Desktop\\My Repos\\fsweb-s13g3-node-api-project-3\\codegrade_mvp.test.js",
+        "retries": 0,
+        "flaky": false,
+        "suite": "C:\\Users\\ebrus\\OneDrive\\Desktop\\My Repos\\fsweb-s13g3-node-api-project-3\\codegrade_mvp.test.js > server.js > [POST] /api/users/:id/posts"
+      },
+      {
+        "name": "server.js [POST] /api/users/:id/posts [24] text yoksa doğrulama mesajı",
+        "duration": 31,
+        "status": "passed",
+        "rawStatus": "passed",
+        "type": "unit",
+        "filePath": "C:\\Users\\ebrus\\OneDrive\\Desktop\\My Repos\\fsweb-s13g3-node-api-project-3\\codegrade_mvp.test.js",
+        "retries": 0,
+        "flaky": false,
+        "suite": "C:\\Users\\ebrus\\OneDrive\\Desktop\\My Repos\\fsweb-s13g3-node-api-project-3\\codegrade_mvp.test.js > server.js > [POST] /api/users/:id/posts"
+      }
+    ]
+  }
+}

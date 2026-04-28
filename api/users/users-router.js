@@ -1,44 +1,83 @@
 const express = require('express');
 
-// `users-model.js` ve `posts-model.js` sayfalarına ihtiyacınız var
-// ara yazılım fonksiyonları da gereklidir
+const Users = require('./users-model');
+const Posts = require('../posts/posts-model');
+
+const {
+  validateUserId,
+  validateUser,
+  validatePost
+} = require('../middleware/middleware');
 
 const router = express.Router();
 
-router.get('/', (req, res) => {
-  // TÜM KULLANICILARI İÇEREN DİZİYİ DÖNDÜRÜN
+// GET all users
+router.get('/', async (req, res) => {
+  try {
+    const users = await Users.get();
+    res.status(200).json(users);
+  } catch (err) {
+    res.status(500).json({ message: "Kullanıcılar alınamadı" });
+  }
 });
 
-router.get('/:id', (req, res) => {
-  // USER NESNESİNİ DÖNDÜRÜN
-  // user id yi getirmek için bir ara yazılım gereklidir
+// GET user by id
+router.get('/:id', validateUserId, (req, res) => {
+  res.status(200).json(req.user);
 });
 
-router.post('/', (req, res) => {
-  // YENİ OLUŞTURULAN USER NESNESİNİ DÖNDÜRÜN
-  // istek gövdesini doğrulamak için ara yazılım gereklidir.
+// CREATE user
+router.post('/', validateUser, async (req, res) => {
+  try {
+    const newUser = await Users.insert(req.body);
+    res.status(201).json(newUser);
+  } catch (err) {
+    res.status(500).json({ message: "Kullanıcı eklenemedi" });
+  }
 });
 
-router.put('/:id', (req, res) => {
-  // YENİ GÜNCELLENEN USER NESNESİNİ DÖNDÜRÜN
-  // user id yi doğrulayan ara yazılım gereklidir
-  // ve istek gövdesini doğrulayan bir ara yazılım gereklidir.
+// UPDATE user
+router.put('/:id', validateUserId, validateUser, async (req, res) => {
+  try {
+    const updatedUser = await Users.update(req.params.id, req.body);
+    res.status(200).json(updatedUser);
+  } catch (err) {
+    res.status(500).json({ message: "Kullanıcı güncellenemedi" });
+  }
 });
 
-router.delete('/:id', (req, res) => {
-  // SON SİLİNEN USER NESNESİ DÖNDÜRÜN
-  // user id yi doğrulayan bir ara yazılım gereklidir.
+// DELETE user
+router.delete('/:id', validateUserId, async (req, res) => {
+  try {
+    await Users.remove(req.params.id);
+    res.status(200).json(req.user);
+  } catch (err) {
+    res.status(500).json({ message: "Kullanıcı silinemedi" });
+  }
 });
 
-router.get('/:id/posts', (req, res) => {
-  // USER POSTLARINI İÇEREN BİR DİZİ DÖNDÜRÜN
-  // user id yi doğrulayan bir ara yazılım gereklidir.
+// GET user's posts
+router.get('/:id/posts', validateUserId, async (req, res) => {
+  try {
+    const posts = await Users.getUserPosts(req.params.id);
+    res.status(200).json(posts);
+  } catch (err) {
+    res.status(500).json({ message: "Postlar alınamadı" });
+  }
 });
 
-router.post('/:id/posts', (req, res) => {
-  // YENİ OLUŞTURULAN KULLANICI NESNESİNİ DÖNDÜRÜN
-  // user id yi doğrulayan bir ara yazılım gereklidir.
-  // ve istek gövdesini doğrulayan bir ara yazılım gereklidir.
+// CREATE post for user
+router.post('/:id/posts', validateUserId, validatePost, async (req, res) => {
+  try {
+    const newPost = await Posts.insert({
+      ...req.body,
+      user_id: req.params.id
+    });
+
+    res.status(201).json(newPost);
+  } catch (err) {
+    res.status(500).json({ message: "Post eklenemedi" });
+  }
 });
 
-// routerı dışa aktarmayı unutmayın
+module.exports = router;
