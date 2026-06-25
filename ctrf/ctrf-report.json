@@ -10,13 +10,13 @@
       "pending": 0,
       "skipped": 0,
       "other": 0,
-      "start": 1777366951679,
-      "stop": 1777366953794
+      "start": 1782381435098,
+      "stop": 1782381439122
     },
     "tests": [
       {
         "name": "[0] sağlık",
-        "duration": 70,
+        "duration": 133,
         "status": "passed",
         "rawStatus": "passed",
         "type": "unit",
@@ -27,7 +27,7 @@
       },
       {
         "name": "server.js [GET] /api/users [1] doğru kullanıcı sayısı",
-        "duration": 45,
+        "duration": 48,
         "status": "passed",
         "rawStatus": "passed",
         "type": "unit",
@@ -38,7 +38,7 @@
       },
       {
         "name": "server.js [GET] /api/users [2] tüm kullanıcıları alıyor",
-        "duration": 30,
+        "duration": 31,
         "status": "passed",
         "rawStatus": "passed",
         "type": "unit",
@@ -49,7 +49,7 @@
       },
       {
         "name": "server.js [GET] /api/users/:id [3] kullanıcıyı alıyor",
-        "duration": 34,
+        "duration": 33,
         "status": "passed",
         "rawStatus": "passed",
         "type": "unit",
@@ -71,7 +71,7 @@
       },
       {
         "name": "server.js [GET] /api/users/:id [5] id yoksa doğru hata mesajı",
-        "duration": 30,
+        "duration": 24,
         "status": "passed",
         "rawStatus": "passed",
         "type": "unit",
@@ -82,7 +82,7 @@
       },
       {
         "name": "server.js [POST] /api/users [6] veritabanında kullanıcı oluşturuyor",
-        "duration": 55,
+        "duration": 62,
         "status": "passed",
         "rawStatus": "passed",
         "type": "unit",
@@ -93,7 +93,7 @@
       },
       {
         "name": "server.js [POST] /api/users [7] yeni oluşturulan kullanıcıyı döndürüyor",
-        "duration": 45,
+        "duration": 38,
         "status": "passed",
         "rawStatus": "passed",
         "type": "unit",
@@ -126,7 +126,7 @@
       },
       {
         "name": "server.js [PUT] /api/users/:id [10] veritabanını güncelliyor",
-        "duration": 34,
+        "duration": 36,
         "status": "passed",
         "rawStatus": "passed",
         "type": "unit",
@@ -137,7 +137,7 @@
       },
       {
         "name": "server.js [PUT] /api/users/:id [11] yeni kullanıcıyı yanıtlıyor",
-        "duration": 31,
+        "duration": 34,
         "status": "passed",
         "rawStatus": "passed",
         "type": "unit",
@@ -148,7 +148,7 @@
       },
       {
         "name": "server.js [PUT] /api/users/:id [12] id yoksa 404 yanıtlıyor",
-        "duration": 27,
+        "duration": 29,
         "status": "passed",
         "rawStatus": "passed",
         "type": "unit",
@@ -159,7 +159,7 @@
       },
       {
         "name": "server.js [PUT] /api/users/:id [13] name eksikse 400 yanıtlıyor",
-        "duration": 29,
+        "duration": 23,
         "status": "passed",
         "rawStatus": "passed",
         "type": "unit",
@@ -170,7 +170,7 @@
       },
       {
         "name": "server.js [PUT] /api/users/:id [14] name yoksa doğru mesaj",
-        "duration": 29,
+        "duration": 32,
         "status": "passed",
         "rawStatus": "passed",
         "type": "unit",
@@ -181,7 +181,7 @@
       },
       {
         "name": "server.js [DELETE] /api/users/:id [15] kullanıcıyı veritabanından siliyor",
-        "duration": 44,
+        "duration": 30,
         "status": "passed",
         "rawStatus": "passed",
         "type": "unit",
@@ -192,7 +192,7 @@
       },
       {
         "name": "server.js [DELETE] /api/users/:id [16] yeni silinen üyeyi dönderiyor",
-        "duration": 37,
+        "duration": 28,
         "status": "passed",
         "rawStatus": "passed",
         "type": "unit",
@@ -203,7 +203,7 @@
       },
       {
         "name": "server.js [DELETE] /api/users/:id [17] user id yoksa 404 yanıtlıyor",
-        "duration": 32,
+        "duration": 25,
         "status": "passed",
         "rawStatus": "passed",
         "type": "unit",
@@ -214,7 +214,7 @@
       },
       {
         "name": "server.js [GET] /api/users/:id/posts [18] user post sayısı doğru",
-        "duration": 30,
+        "duration": 26,
         "status": "passed",
         "rawStatus": "passed",
         "type": "unit",
@@ -225,7 +225,7 @@
       },
       {
         "name": "server.js [GET] /api/users/:id/posts [19] user id yoksa 404 yanıtlıyor",
-        "duration": 28,
+        "duration": 37,
         "status": "passed",
         "rawStatus": "passed",
         "type": "unit",
@@ -236,7 +236,7 @@
       },
       {
         "name": "server.js [POST] /api/users/:id/posts [20] veritabanında yeni kullanıcı oluşturuyor",
-        "duration": 46,
+        "duration": 71,
         "status": "passed",
         "rawStatus": "passed",
         "type": "unit",
@@ -247,7 +247,7 @@
       },
       {
         "name": "server.js [POST] /api/users/:id/posts [21] yeni oluşturulan üyeyi dönderiyor",
-        "duration": 38,
+        "duration": 31,
         "status": "passed",
         "rawStatus": "passed",
         "type": "unit",
@@ -258,7 +258,7 @@
       },
       {
         "name": "server.js [POST] /api/users/:id/posts [22] user id yoksa 404 yanıtlıyor",
-        "duration": 29,
+        "duration": 27,
         "status": "passed",
         "rawStatus": "passed",
         "type": "unit",
@@ -269,7 +269,7 @@
       },
       {
         "name": "server.js [POST] /api/users/:id/posts [23] text yoksa 400 yanıtlıyor",
-        "duration": 32,
+        "duration": 26,
         "status": "passed",
         "rawStatus": "passed",
         "type": "unit",
@@ -280,7 +280,7 @@
       },
       {
         "name": "server.js [POST] /api/users/:id/posts [24] text yoksa doğrulama mesajı",
-        "duration": 31,
+        "duration": 25,
         "status": "passed",
         "rawStatus": "passed",
         "type": "unit",
